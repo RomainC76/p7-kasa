@@ -9,6 +9,7 @@ const Header = () => {
             <header>
                 <nav>
                     <ul>
+                        <a href="/home"> <img src='../Images/Logo.jpg' alt='logo'></img> </a>
                         <li><Link to="/home">Accueil</Link></li>
                         <li><Link to="/apropos">A propos</Link></li>
                     </ul>
