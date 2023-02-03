@@ -1,18 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-import Home from './Pages/Home';
-import Logement from './Pages/Logement'
-import Apropos from './Pages/Apropos'
+import '@/App.css';
+
+import { BrowserRouter } from 'react-router-dom';
+import Routerglobal from './Pages/Routerglobal';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Home />
-        <Logement />
-        <Apropos />
-      </header>
+      <BrowserRouter>
+        <Routerglobal />
+      </BrowserRouter>
     </div>
   );
 }
