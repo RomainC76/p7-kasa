@@ -1,14 +1,18 @@
 import React from 'react';
 import Banniere from '@/Images/banniereacceuil.jpg'
+// import Logements from '../../logements.json'
+
 import './home.css'
 
 const Home = () => {
     return (
-        <div>
-            Accueil
+        <div className='homep'>
             <div className='Banniere'>
                 <img src={Banniere} className='banniereac' alt='bannierepdac'></img>
-                <p>Chez vous, partout et ailleurs</p>
+                <p className='banniere_text'>Chez vous, partout et ailleurs</p>
+            </div>
+            <div className='card'>
+                <p>Cartes des hébergements</p>
             </div>
         </div>
     );
