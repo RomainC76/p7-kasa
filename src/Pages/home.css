@@ -16,6 +16,7 @@
     width: 1240px;
     height: 223px;
     align-items: center;
+    margin-bottom: 30px;
 }
 .banniereac {
         border-radius: 25px;
@@ -29,7 +30,18 @@
     transform:translate(-50%, -50%);
 }
 
-.card{
-    color: black;
-    size: 80px;
+.container_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+}
+.logement_card img :hover {
+    border: 2px violet;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import Banniere from '@/Images/banniereacceuil.jpg'
-// import Logements from '../../logements.json'
+import LogementCart from '../Components/LogementsCart';
 
 import './home.css'
 
@@ -11,8 +11,8 @@ const Home = () => {
                 <img src={Banniere} className='banniereac' alt='bannierepdac'></img>
                 <p className='banniere_text'>Chez vous, partout et ailleurs</p>
             </div>
-            <div className='card'>
-                <p>Cartes des hébergements</p>
+            <div className='container_cards'>
+                <LogementCart />
             </div>
         </div>
     );
