@@ -1,6 +1,6 @@
 import React from 'react';
 import Banniere from '@/Images/banniereacceuil.jpg'
-import LogementCart from '../Components/LogementsCart';
+import LogementCart from '../Components/LogementsCart'
 
 import './home.css'
 
@@ -13,6 +13,7 @@ const Home = () => {
             </div>
             <div className='container_cards'>
                 <LogementCart />
+
             </div>
         </div>
     );
