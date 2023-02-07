@@ -4,6 +4,7 @@ import fleche from '../Images/Vector.png'
 import './carrousel.css'
 
 export default function Carrousel(props) {
+
     let [imgView, imgChange] = useState(0);
     let nombreImg = props.images.length;
 
@@ -26,7 +27,9 @@ export default function Carrousel(props) {
     };
 
     return (
+
         <div className="carrousel">
+
             {
                 nombreImg > 1 && <img className="fleche fleche-gauche" src={fleche} alt="Contenu précedént" onClick={imgPreview} />
             }
