@@ -8,7 +8,7 @@ export default function Propos() {
             <main>
 
                 <div className='Banniere'>
-                    <img src={Banniere} className='banniereac' alt='banniereapropos'></img>
+                    <img src={Banniere} className='banniereap' alt='banniereapropos'></img>
                 </div>
 
                 <div className='container-propos'>

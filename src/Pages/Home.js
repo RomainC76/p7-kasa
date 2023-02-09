@@ -2,6 +2,7 @@ import React from 'react';
 import Banniere from '@/Images/banniereacceuil.jpg'
 import LogementCart from '../Components/LogementsCart'
 
+
 import './home.css'
 
 

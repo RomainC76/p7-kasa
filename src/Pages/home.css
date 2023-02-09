@@ -1,33 +1,31 @@
-.homep {
-    width: 1240px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    font-family: 'Montsierrat';
+main {
+    margin: auto;
+    font-family: 'Montserrat';
     font-weight: 500;
+    max-width: 1400px;
 }
-
 .Banniere {
     position: relative;
     text-align: center;
     color: white;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.Banniere img {
     width: 1240px;
     height: 223px;
-    align-items: center;
-    margin-bottom: 30px;
 }
 .banniereac {
         border-radius: 25px;
         filter: brightness(50%);
 }
 .banniere_text {
+    margin: 0px;
     font-size: 48px;
     position: absolute;
-    top: 50px;
-    left:50%;
-    transform:translate(-50%, -50%);
 }
 
 .container_cards {
@@ -39,7 +37,7 @@
     padding-bottom: 45px;
     padding-left: 30px;
     padding-right: 30px;
-    background-color: #F6F6F6;
+    background-color: #F7F7F7;
     border-radius: 25px;
 }
 .background_container {

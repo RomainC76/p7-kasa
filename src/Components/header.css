@@ -1,8 +1,12 @@
 .Header{
     width: 1240px;
-    height: auto;
+    height: 68px;
     padding: 20px;
     padding-top: 5px;
+    margin: auto;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    max-width: 1400px;
 }
 nav {
     display: flex;
