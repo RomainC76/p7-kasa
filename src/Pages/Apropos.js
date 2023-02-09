@@ -6,11 +6,11 @@ export default function Propos() {
     return (
         <React.Fragment>
             <main>
-                <div className='homep'>
-                    <div className='Banniere'>
-                        <img src={Banniere} className='banniereac' alt='banniereapropos'></img>
-                    </div>
+
+                <div className='Banniere'>
+                    <img src={Banniere} className='banniereac' alt='banniereapropos'></img>
                 </div>
+
                 <div className='container-propos'>
                     <Collapse title="Fiabilité" description="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes." />
                     <Collapse title="Respect" description="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme." />

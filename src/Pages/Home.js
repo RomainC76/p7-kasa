@@ -4,19 +4,22 @@ import LogementCart from '../Components/LogementsCart'
 
 import './home.css'
 
-const Home = () => {
+
+export default function Home() {
     return (
-        <div className='homep'>
-            <div className='Banniere'>
-                <img src={Banniere} className='banniereac' alt='bannierepdac'></img>
-                <p className='banniere_text'>Chez vous, partout et ailleurs</p>
-            </div>
-            <div className='container_cards'>
-                <LogementCart />
+        <React.Fragment>
 
-            </div>
-        </div>
-    );
-};
+            <main>
+                <div className='Banniere'>
+                    <img src={Banniere} className='banniereac' alt='bannierepdac'></img>
+                    <p className='banniere_text'>Chez vous, partout et ailleurs</p>
+                </div>
+                <div className='container_cards'>
+                    <LogementCart />
+                </div>
+            </main>
 
-export default Home;
+        </React.Fragment>
+    )
+
+}
