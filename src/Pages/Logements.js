@@ -34,7 +34,7 @@ export default function Logements() {
 
         <React.Fragment>
             <main>
-                <Carrousel images={logementObject?.pictures} />
+                <Carrousel slides={logementObject?.pictures} />
                 <div className='header-logement'>
                     <div>
                         <h1 className='logement_title'> {logementObject.title}</h1>

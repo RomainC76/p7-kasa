@@ -1,52 +1,85 @@
-import React, { useState } from "react";
-import fleche from '../Images/Vector.png'
+import { useState } from "react";
+import Arrow from "../Components/Arrow";
 
-import './carrousel.css'
+// il s'agit de la version trouvée ici : https://github.com/monsterlessonsacademy/monsterlessonsacademy/blob/221-react-image-slider/src/ImageSlider.js
 
-export default function Carrousel(props) {
+const slideStyles = {
+    width: "1240px",
+    height: "415px",
+    borderRadius: "10px",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+};
 
-    let [imgView, imgChange] = useState(0);
-    let nombreImg = props.images.length;
+const sliderStyles = {
+    position: "relative",
+    height: "100%",
+};
 
-    const imgPreview = () => {
-        if (imgView === 0) {
-            imgChange(nombreImg - 1);
-        } else {
-            imgChange(imgView - 1);
-        }
-        return (imgChange);
+const slideNumber = {
+    position: "absolute",
+    color: "white",
+    bottom: "10px",
+    margin: "auto",
+    width: "100%",
+    textAlign: "center",
+};
+
+const Carousel = ({ slides }) => {
+    const arrowprev = {
+        left: "10px",
+        zindex: "2",
+        transform: "rotateZ(180deg)",
+        top: "150px",
+        opacity: slides.length <= 1 ? "0" : "1",
+        height: "130px",
+        width: "130px",
+        position: "absolute",
     };
 
-    const imgNext = () => {
-        if (imgView === nombreImg - 1) {
-            imgChange(nombreImg = 0);
-        } else {
-            imgChange(imgView + 1);
-        }
-        return (imgChange);
+    const arrownext = {
+        opacity: slides.length <= 1 ? "0" : "1",
+        zindex: "2",
+        right: "10px",
+        top: "150px",
+        height: "130px",
+        width: "130px",
+        position: "absolute",
+    };
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const goToPrevious = () => {
+        const isFirstSlide = currentIndex === 0;
+        const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+        setCurrentIndex(newIndex);
+    };
+    const goToNext = () => {
+        const isLastSlide = currentIndex === slides.length - 1;
+        const newIndex = isLastSlide ? 0 : currentIndex + 1;
+        setCurrentIndex(newIndex);
+    };
+
+    const slideStylesWidthBackground = {
+        ...slideStyles,
+        backgroundImage: `url(${slides[currentIndex]})`,
     };
 
     return (
-
-        <div className="carrousel">
-
-            {
-                nombreImg > 1 && <img className="fleche fleche-gauche" src={fleche} alt="Contenu précedént" onClick={imgPreview} />
-            }
-            {
-                props.images.map((image, index) => {
-                    return (
-                        <img key={index} className={index === imgView ? 'carrousel-img actif' : 'carrousel-img'} src={image} alt="Logement" />
-                    )
-                })
-            }
-            {
-                nombreImg > 1 && <img className="fleche fleche-droite" src={fleche} alt="Contenu suivant" onClick={imgNext} />
-            }
+        <div style={sliderStyles}>
+            <div>
+                <div onClick={goToPrevious}>
+                    <Arrow style={arrowprev} />
+                </div>
+                <div onClick={goToNext}>
+                    <Arrow style={arrownext} />
+                </div>
+            </div>
+            <div style={slideNumber}>
+                {currentIndex + 1} / {slides.length}
+            </div>
+            <div style={slideStylesWidthBackground}></div>
         </div>
     );
+};
 
-
-
-
-}
+export default Carousel;
