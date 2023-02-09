@@ -5,17 +5,17 @@
     gap: 2%;
 }
 
-.tags-list li {
+.filtre_item {
     font-size: 14px;
     list-style: none;
     background-color: #FF6060;
     color: white;
     border-radius: 10px;
     width: 115px;
-    height: 25px;
+    min-height: 25px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-
-
+    text-align: center;
 }
