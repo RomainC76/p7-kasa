@@ -1,7 +1,7 @@
 import React from 'react'
-import Collapse from '@/Components/Collapse'
 import Banniere from '../Images/kalen-emsley-Bkci_8qcdvQ-unsplash 2.jpg'
 import './apropos.css'
+import Collapse from '@/Components/Collapse'
 export default function Propos() {
     return (
         <React.Fragment>

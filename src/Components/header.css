@@ -1,5 +1,5 @@
 .Header{
-    width: 1240px;
+    max-width: 1240px;
     height: 68px;
     padding: 20px;
     padding-top: 5px;
@@ -26,6 +26,9 @@ ul li {
 a {
     text-decoration: none;
     color:#FF6060;
+}
+a:hover{
+    text-decoration: underline #FF6060 1px;
 }
 .App-logo {
     width: 160px;
