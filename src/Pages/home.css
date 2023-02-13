@@ -81,11 +81,21 @@ main {
 
 
 @media screen and (max-width: 768px) {
+
+    main  {
+        max-width: 768px;
+        min-width: 400px;
+    }
     .container_cards {
+        max-width: 768px;
+        min-width: 400px;
+        margin:0px;
+        padding: 20px;
         flex-direction: column;
         flex-wrap: nowrap;
         gap: 20px;
         background-color: white;
+        align-items: center;
     }
 
     .background_container {

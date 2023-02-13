@@ -28,8 +28,12 @@
 
 @media screen and (max-width: 768px) {
     .logement_card {
-        height: 260px;
-        width: 100% !important;
+        height: 255px;
+        width: 335px;
+    }
+    .img-cover{
+        width: 335px;
+        height: 255px;
     }
 
     .card-title {
@@ -37,9 +41,3 @@
     }
 }
 
-@media screen and (max-width: 1250px) {
-    .logement_card {
-        height: 260px;
-        width: 40%;
-    }
-}

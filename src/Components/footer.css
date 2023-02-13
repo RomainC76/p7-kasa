@@ -16,3 +16,9 @@
 .footer_text{
     color: white;
 }
+@media screen and (max-width: 768px) {
+    .footer {
+        max-width: 768px;
+        min-width: 400px;
+    }
+}
