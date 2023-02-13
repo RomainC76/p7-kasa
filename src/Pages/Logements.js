@@ -36,7 +36,7 @@ export default function Logements() {
             <main>
                 <Carrousel slides={logementObject?.pictures} />
                 <div className='header-logement'>
-                    <div>
+                    <div className='header-logement-titre'>
                         <h1 className='logement_title'> {logementObject.title}</h1>
                         <p className="logement_location">{logementObject.location}</p>
                         <Tags tag={logementObject.tags} />

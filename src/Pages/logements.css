@@ -5,15 +5,31 @@
     justify-content: space-between;
     padding-bottom: 20px;
 }
-
+.header-logement-titre{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.header-logement-titre ul {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
 .logement_title {
+    width: 635px;
+    height: 51px;
+    margin: 0px;
     font-size: 36px;
     font-weight: 500;
 }
 
 .logement_location {
+    width: 176px;
+    height: 26px;
+    margin: 0px;
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .header-logement_right {
