@@ -17,7 +17,6 @@
         display: block !important;
     }
 
-
 }
 
 .header-logement {
@@ -40,7 +39,7 @@
 }
 .logement_title {
     width: 635px;
-    height: 51px;
+    height: 100%;
     margin: 0px;
     font-size: 36px;
     font-weight: 500;
