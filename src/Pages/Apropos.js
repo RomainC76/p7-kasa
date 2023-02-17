@@ -1,5 +1,5 @@
 import React from 'react'
-import Banniere from '../Images/kalen-emsley-Bkci_8qcdvQ-unsplash 2.jpg'
+import Banniere from '../Images/banniereap.jpg'
 import './apropos.css'
 import Collapse from '@/Components/Collapse'
 export default function Propos() {
@@ -7,7 +7,7 @@ export default function Propos() {
         <React.Fragment>
             <main>
 
-                <div className='Banniere'>
+                <div className='Banniereap'>
                     <img src={Banniere} className='banniereap' alt='banniereapropos'></img>
                 </div>
 

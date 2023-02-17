@@ -28,13 +28,19 @@
     align-items: flex-end;
 }
 @media screen and (max-width: 768px) {
+    .logement_card {
+        height: 260px;
+        width: 100% !important;
+    }
 
-   .logement_card{
-    width: 335px;
-    height: 255px;
-   }
-   .card-title{
-    width: 295px;
-    height: 52px;
-   }
+    .card-title {
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .logement_card {
+        height: 260px;
+        width: 43%;
+    }
 }

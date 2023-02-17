@@ -1,5 +1,5 @@
 .footer{
-    width: 1240px;
+    max-width: 1240px;
     height: auto;
     background-color: black;
     display: flex;
@@ -19,6 +19,6 @@
 @media screen and (max-width: 768px) {
     .footer {
         max-width: 768px;
-        min-width: 400px;
+        min-width: 330px;
     }
 }
