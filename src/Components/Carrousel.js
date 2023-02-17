@@ -4,7 +4,7 @@ import Arrow from "../Components/Arrow";
 // il s'agit de la version trouvée ici : https://github.com/monsterlessonsacademy/monsterlessonsacademy/blob/221-react-image-slider/src/ImageSlider.js
 
 const slideStyles = {
-    width: "1240px",
+    width: "100%",
     height: "415px",
     borderRadius: "10px",
     backgroundSize: "cover",
