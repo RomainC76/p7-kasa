@@ -65,13 +65,14 @@
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    max-width: 100%;
 }
 .collapse{
-    width: 582px;
+    max-width: 582px;
     height: auto;
 }
 .collapse-header {
-    width: 582px ;
+    max-width: 582px ;
     height: 52px;
 }
 .collapse_description {
