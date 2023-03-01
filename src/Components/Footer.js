@@ -1,5 +1,5 @@
 import React from 'react';
-import Logoblc from '@/Images/Logofooter.svg'
+import Logoblc from '../Images/Logofooter.svg'
 
 import './footer.css'
 

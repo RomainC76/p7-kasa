@@ -1,6 +1,6 @@
 import React from 'react'
 import Banniere from '../Images/banniereap.jpg'
-import Collapse from '@/Components/Collapse'
+import Collapse from '../Components/Collapse'
 import './apropos.css'
 export default function Propos() {
     return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import Logo from '@/Images/LOGO.svg'
+import Logo from '../Images/LOGO.svg'
 
 import './header.css'
 

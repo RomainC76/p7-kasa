@@ -2,8 +2,8 @@ import React from 'react';
 import { Routes, Route } from "react-router-dom"
 
 
-import { Layout, Home, Apropos, Logements } from '@/Pages'
-import Error from '@/_utils/Error'
+import { Layout, Home, Apropos, Logements } from '../Pages'
+import Error from '../_utils/Error'
 
 const Routerglobal = () => {
     return (
